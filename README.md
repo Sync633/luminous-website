@@ -67,12 +67,4 @@ Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais de
 
 ---
 
-## 📬 Contato
-
-- **E-mail:** contato@luminous.com
-- **Instagram:** [@luminous_official](https://instagram.com/luminous_official)
-- **WhatsApp:** [Clique aqui](https://wa.me/seunumerodetelefone)
-
----
-
 Desenvolvido com 💙 pela equipe Luminous.
