@@ -1,2 +1,2 @@
 # web-luminous
-Página web da empresa Luminous
+Landing Page da empresa Luminous
