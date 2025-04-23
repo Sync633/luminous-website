@@ -8,16 +8,6 @@ Este repositório contém a página web institucional da **Luminous**, uma empre
 
 A **Luminous** tem como missão criar um **aplicativo mobile** inovador para auxiliar crianças com hiperfoco e **TDAH** em seus estudos, potencializando concentração, organização e motivação por meio de recursos interativos e personalizados.
 
-Principais objetivos:
-
-- Oferecer ferramentas de acompanhamento de tarefas e metas de estudo;
-- Timer Pomodoro adaptativo para períodos de foco e pausa;
-- Sistema de recompensas lúdicas para engajamento;
-- Relatórios de progresso para pais e educadores;
-- Interface intuitiva e acessível.
-
-> **Observação:** a menção a TDAH e hiperfoco é intencional neste README para contextualizar o público-alvo do nosso aplicativo. Se preferir uma abordagem mais genérica, você pode remover ou resumir essa parte.
-
 ---
 
 ## 🚀 Tecnologias Utilizadas
