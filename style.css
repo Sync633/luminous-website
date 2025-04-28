@@ -39,6 +39,7 @@ body {
 
 .traco {
     width: 35px;
+    background-color: #08678C;
     border: 2px solid #08678C;
     border-radius: 2px;
     margin-left: 5px;
@@ -53,15 +54,14 @@ body {
     width: 100%;
     background-color: #FFFFFF;
     height: 75px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 0px;
     box-shadow: 0px 4px 9px rgb(0, 0, 0, 0.1), 0px 6px 16px rgb(0, 0, 0, 0.09), 0px 20px 21px rgb(0, 0, 0, 0.05);
     transition: all 0.75s ease;
 }
 
 .navbar-container {
     max-width: 1325px;
-    height: 75px;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -69,9 +69,24 @@ body {
     transition: all 0.75s ease;
 }
 
+.logo-link {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #011125;
+}
+
+.nav-logo {
+    width: 175px;
+    margin-bottom: 17.5px;
+}
+
 .nav-menu {
     display: flex;
-    gap: 2rem;
+    gap: 32px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -97,35 +112,12 @@ body {
     transform: translateY(-2.5px)
 }
 
-.logo-link {
-    text-decoration: none;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    color: #011125;
-}
-
-.nav-logo {
-    width: 175px;
-    margin-bottom: 17.5px;
-}
-
-.logo p {
-    margin: 0;
-    font-family: "MuseoModerno";
-    font-size: 34px;
-    font-weight: 200;
-    margin-left: 2px;
-}
-
 .navbar.scrolled {
     height: 50px;
 }
 
 .navbar-container.scrolled {
-    height: 50px;
+    height: 100%;
 }
 
 /*--------------------------------- HERO SECTION ----------------------------------------------------------*/
@@ -143,6 +135,7 @@ body {
 
 .hero {
     height: 870px;
+    width: 100%;
     background-color: #FFFFFF;
     border-bottom-left-radius: 175px;
     display: flex;
@@ -151,13 +144,17 @@ body {
 
 .hero-container {
     margin-top: 150px;
-    width: 1300px;
+    width: 68dvw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.hero-texto {
+    height: fit-content;
 }
 
 .hero-logo {
-    margin-top: 225px;
     margin-left: -5px;
     width: 500px;
 }
@@ -185,18 +182,18 @@ body {
     align-items: center;
     justify-content: center;
     height: 720px;
-    width: 560px;
+    width: 30%;
 }
 
 .hero-forma {
     position: relative;
-    top: 12.5%;
+    top: 11%;
 }
 
 .hero-luna {
     position: absolute;
-    top: 5%;
-    left: 22%;
+    top: 3%;
+    left: 11%;
 }
 
 /*--------------------------------- HIPERFOCO ----------------------------------------------------------*/
@@ -206,8 +203,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin-bottom: 155px;
-    height: 750px;
+    margin-bottom: 175px;
 }
 
 .titulo-hiperfoco {
@@ -222,8 +218,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1200px;
-    height: 440px;
+    width: 86%;
+    aspect-ratio: 1200/460;
     background-color: #FFFFFF;
     border-radius: 15px;
     gap: 40px;
@@ -289,7 +285,7 @@ body {
     bottom: 25px;
     display: flex;
     gap: 10px;
-    z-index: 10;
+    z-index: 2;
 }
 
 .slider-button {
@@ -312,7 +308,7 @@ body {
     transform: scale(1.1);
 }
 
-.texto-cards {
+.hiperfoco-texto-cards {
     margin-top: 0px;
     margin-left: 5px;
     text-justify: auto;
@@ -345,6 +341,16 @@ body {
 
 .tdah-texto {
     width: 50%;
+}
+
+.tdah-txt {
+    margin-top: 0px;
+    margin-left: 5px;
+    text-justify: auto;
+    width: 77%;
+    font-size: 29px;
+    font-style: italic;
+    font-weight: 300;
 }
 
 .tdah-carrossel {
@@ -428,10 +434,11 @@ body {
 }
 
 .titulo-sintomas {
+    margin-left: 10px;
     font-size: 30px;
 }
 
-.texto-sintomas {
+.sintomas-txt {
     margin-top: 0px;
     margin-left: 10px;
     text-justify: auto;
@@ -441,12 +448,12 @@ body {
     font-weight: 300;
 }
 
-.titulo-sintomas-3 {
+.sintomas-titulo-3 {
     font-size: 26px;
     margin-left: 75px;
 }
 
-.texto-sintomas-3 {
+.sintomas-txt-3 {
     margin-top: 0px;
     margin-left: 75px;
     text-justify: distribute;
@@ -457,64 +464,44 @@ body {
 }
 /*  -------- DETALHES BORDAS -------------------------------------------------------------*/
 
-.bolinha-topo-meio {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.bolinha {
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
     background: white;
     border: 3px solid #08678C;
     border-radius: 50%;
+}
+
+
+.bolinha-topo-meio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 .bolinha-topo-esquerda {
     position: absolute;
     top: 50%;
     left: 25%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: white;
-    border: 3px solid #08678C;
-    border-radius: 50%;
 }
 
 .bolinha-topo-direita {
     position: absolute;
     top: 50%;
     right: 23%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: white;
-    border: 3px solid #08678C;
-    border-radius: 50%;
 }
 
 .bolinha-esquerda {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: white;
-    border: 3px solid #08678C;
-    border-radius: 50%;
 }
 
 .bolinha-direita {
     position: absolute;
     top: 50%;
     right: -1.75%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: white;
-    border: 3px solid #08678C;
-    border-radius: 50%;
 }
 
 .pontinha {
@@ -562,16 +549,16 @@ body {
     margin-bottom: 200px;
 }
 
-.hiper-tdah-conteiner {
+.hiper-tdah-container {
     display: flex;
     justify-content: center;
-    height: 635px;
     gap: 10px;
 }
 
 .hiper-tdah-imagens {
     position: relative;
     width: 36%;
+    aspect-ratio: 500/560 ;
     margin: 75px;
     margin-bottom: 0px;
 }
@@ -580,24 +567,28 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    width: 43%;
 }
 
 .hiper-tdah-img2 {
     position: absolute;
     top: 65px;
     left: 45px;
+    width: 80%;
 }
 
 .hiper-tdah-img3 {
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 39%;
 }
 
 .hiper-tdah-img4 {
     position: absolute;
     bottom: -9%;
     right: 36%;
+    width: 40%;
 }
 
 .hiper-tdah-texto {
@@ -606,7 +597,7 @@ body {
     width: 40%;
 }
 
-.texto-direita {
+.hiper-tdah-txt {
     margin-top: 0px;
     margin-left: 5px;
     width: 84%;
@@ -622,20 +613,17 @@ body {
 }
 
 /*  -------- CARDS -----------------------------------------------------------------------*/
-.cards-cima {
+.cards{
     display: flex;
     justify-content: center;
-}
-
-.cards-baixo {
-    display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
 .card {
     width: 29%;
     z-index: 1;
-    height: 260px;
+    aspect-ratio: 400/260;
     margin: 15px;
     margin-bottom: 60px;
     box-shadow: 0px 4px 9px rgb(0, 90, 99, 0.1), 0px 16px 16px rgb(0, 90, 99, 0.09), 0px 36px 21px rgb(0, 90, 99, 0.05);
@@ -653,7 +641,6 @@ body {
 .txt-card {
     font-size: 18px;
     font-style: italic;
-    text-justify: distribute;
     padding-left: 50px;
     padding-right: 80px;
 }
@@ -685,12 +672,15 @@ body {
 .grid-equipe{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    margin: 20px
+    grid-template-rows: 1fr 1fr;
+    margin: 5px;
 }
 
 .grid-1 {
     grid-row: 1 / span 2;
     background-color: #011125;
+    height: 100%;
+    aspect-ratio: 1/1;
 }
 
 .grid-1 p {
@@ -711,28 +701,24 @@ body {
 
 .grids {
     position: relative;
-    height: 270px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
 }
 
-.fotos-equipe{
-    position: relative;
-    top: 0;
-    left: 0;
+.fotos-equipe {
     width: 100%;
     height: 100%;
-    object-fit: fill;
-    object-position: center;
 }
 
 .grid-luna {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "MuseoModerno";
-    font-style: normal;
-    font-size: 40px;
-    font-weight: 250;
-    color:#011125
+}
+
+.grid-luna img {
+    width: 75%;
 }
 
 /*  -------- OVERLAY FOTOS ---------------------------------------------------------------*/
@@ -777,26 +763,33 @@ body {
     font-weight: 275;
 }
 
-
 /*----------------------------------- SEÇÂO OQ SOMOS-------------------------------------------*/
 .oq-somos {
     padding: 10px;
     margin-bottom: 75px;
-    margin-left: 75px;
+    margin-right: 75px ;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
 .oq-somos-texto {
     width: 50%;
-    max-width: 600px;
+}
+
+.oq-somos-txt {
+    margin-top: 0px;
+    margin-left: 5px;
+    text-justify: auto;
+    width: 77%;
+    font-size: 29px;
+    font-style: italic;
+    font-weight: 300;
 }
 
 .oq-somos-carrossel {
-    width: 50%;
-    max-width: 500px;
+    width: 500px;
     position: relative;
 }
 
@@ -809,7 +802,7 @@ body {
     gap: 20px;
 }
 
-.cards {
+.cards-carrossel {
     position: relative;
     width: 100%;
     height: 450px;
@@ -871,15 +864,6 @@ body {
     background: #011126;
 }
 
-.texto-esquerda {
-    margin-top: 0px;
-    margin-left: 5px;
-    text-justify: auto;
-    width: 77%;
-    font-size: 29px;
-    font-style: italic;
-    font-weight: 300;
-}
 /*----------------------------------- FOOTER -----------------------------------------------------*/
 
 .footer {
@@ -980,4 +964,249 @@ body {
 }
 
 
+/*----------------------------------- MEDIA QUERIES -----------------------------------------------------*/
 
+
+@media only screen and (min-width: 1981px) {
+
+    .principal {
+        max-width: 73vw;
+    }
+}
+
+
+
+@media only screen and (min-width: 2559px) {
+
+    .txtTitulos {
+        font-size: 46px;
+    }
+
+    .traco {
+        height: 6px;
+    }
+
+    /*------------------- NAV ---------------------------*/
+    .navbar {
+        height: 100px;
+        padding: 23px 0px;
+    }
+
+    .navbar-container {
+        max-width: 73%;
+    }
+
+    .nav-logo {
+        width: 250px;
+    }
+
+    .nav-menu {
+        gap: 48px;
+    }
+
+    .nav-link {
+        font-size: 34px;
+    }
+
+    .navbar.scrolled {
+        height: 75px;
+    }
+
+    .hero-wrapper {
+        height: 2300px;
+    }
+
+
+    /*------------------- HERO ---------------------------*/
+
+    .hero {
+        height: 1250px;
+    }
+
+    .hero-logo {
+        width: 750px;
+    }
+
+    .hero-txt-azul, .hero-txt-branco {
+        font-size: 28px;
+    }
+
+    .hero-forma {
+        width: 550px;
+        top: 15%;
+    }
+
+    .hero-luna {
+        width: 572px;
+        top: -18%;
+    }
+
+
+    /*---------------- HIPERFOCO ------------------------*/
+
+    .slider-imagens {
+        height: 525px;
+    }
+
+    .hiperfoco-texto-container {
+        height: 525px;
+    }
+
+    .hiperfoco-texto-cards {
+        font-size: 47px;
+    }
+
+    .slider-button {
+        width: 75px;
+        height: 75px;
+    }
+
+    .slider-button img {
+        width: 32px;
+    }
+
+
+    /*------------------- TDAH ---------------------------*/
+
+    .tdah-txt {
+        font-size: 41px;
+    }
+
+    .tdah-cards {
+        width: 350px;
+        height: 420px;
+    }
+
+
+    /*----------------- SINTOMAS -------------------------*/
+
+    .sintoma-1, .sintoma-2, .sintoma-3 {
+        height: 400px;
+    }
+
+    .titulo-sintomas {
+        font-size: 38px;
+    }
+
+    .sintomas-txt {
+        font-size: 38px;
+    }
+
+    .sintomas-titulo-3 {
+        margin-left: 85px;
+        font-size: 38px;
+    }
+
+    .sintomas-txt-3 {
+        margin-left: 85px;
+        font-size: 38px;
+    }
+
+    .bolinha {
+        width: 27.5px;
+        height: 27.5px;
+        border: 4px solid #08678C;
+    }
+
+
+    /*-------------- HIPERFOCO NO TDAH -----------------*/
+
+    .hiper-tdah-txt {
+        font-size: 42px;
+    }
+
+
+    /*---------------- CARACTERISTICAS -----------------*/
+
+    .titulo-card {
+        padding-left: 70px;
+        font-size: 48px;
+    }
+
+    .txt-card {
+        padding-left: 70px;
+        font-size: 26px;
+    }
+
+
+    /*--------------------- SOBRE ----------------------*/
+    
+    .grid-1 p {
+        font-size: 220px;
+    }
+
+    .grid-1 h3 {
+        font-size: 43px;
+    }
+
+    /*------------------- OQ SOMOS --------------------*/
+
+    .oq-somos-txt {
+        font-size: 44px;
+    }
+
+    .oq-somos-carrossel {
+        width: 667px;
+    }
+
+    .cards-carrossel {
+        height: 600px;
+    }
+
+    .next-btn {
+        padding: 40px 40px;
+    }
+
+    .seta {
+        width: 40px;
+    }
+
+
+    /*-------------------- FOOTER ---------------------*/
+
+    .footer {
+        height: 367px;
+    }
+
+    .logo-footer img {
+        width: 380px;
+    }
+
+    .email-div {
+        margin-right: 45px;
+        height: 167px;
+    }
+
+    .email {
+        width: 313px;
+    }
+
+    .email img {
+        height: 73px;
+    }
+
+    .email p {
+        font-size: 36px;
+    }
+
+    .contatos-logos {
+        width: 320px;
+    }
+
+    .contatos-logos img {
+        height: 60px;
+    }
+
+    .barra-baixo {
+        height: 2px;
+    }
+
+    .copyright {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
