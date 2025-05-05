@@ -97,6 +97,7 @@ body {
 }
 
 .nav-link {
+    transition: all 0.3s ease;
     color: #011125;
     text-decoration: none;
     font-family: "Inter";
@@ -120,6 +121,49 @@ body {
     height: 100%;
 }
 
+.menu-mobile {
+    display: none;
+    cursor: pointer;
+    background-color: #011126;
+    padding: 6px 2px;
+    border-radius: 10%;
+}
+
+.menu-mobile div {
+    width: 32px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.nav-menu.active {
+    transform: translateX(0);
+}
+  
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+  
+.menu-mobile.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+  
+.menu-mobile.active .line2 {
+    opacity: 0;
+}
+  
+.menu-mobile.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
 /*--------------------------------- HERO SECTION ----------------------------------------------------------*/
 
 .hero-wrapper {
@@ -128,9 +172,6 @@ body {
     width: 100%;
     height: 1750px;
     background-color: #011126;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero {
@@ -269,6 +310,15 @@ body {
     box-sizing: border-box;
 }
 
+.hiperfoco-texto-cards {
+    margin-top: 0px;
+    margin-left: 5px;
+    width: 85%;
+    font-size: 33px;
+    font-style: italic;
+    font-weight: 300;
+}
+
 .slider-button.prev {
     left: 20px;
     right: auto;
@@ -306,16 +356,6 @@ body {
 
 .slider-button:hover {
     transform: scale(1.1);
-}
-
-.hiperfoco-texto-cards {
-    margin-top: 0px;
-    margin-left: 5px;
-    text-justify: auto;
-    width: 85%;
-    font-size: 33px;
-    font-style: italic;
-    font-weight: 300;
 }
 
 .hiperfoco-seta {
@@ -744,7 +784,6 @@ body {
     overflow: hidden;
     white-space: nowrap; 
     color: white;
-    font-size: 26px;
     top: 77.5%;
     left: 44%;
     transform: translate(-50%, -50%);
@@ -1207,6 +1246,880 @@ body {
 
 }
 
+
 @media only screen and (max-width: 1024px) {
 
+    .titulos {
+        margin-bottom: 25px;
+    }
+
+    .txtTitulos {
+        font-size: 26px;
+    }
+
+    .principal {
+        max-width: 97.5vw;
+    }
+
+    /*------------------- NAV ---------------------------*/
+    .navbar {
+        height: 50px;
+    }
+
+    .navbar-container {
+        max-width: 95%;
+    }
+
+    .nav-logo {
+        width: 150px;
+    }
+
+    .nav-menu {
+        gap: 22px;
+    }
+
+    .nav-link {
+        font-size: 19px;
+    }
+
+    .navbar.scrolled {
+        height: 37.5px;
+    }
+
+
+    /*------------------- HERO ---------------------------*/
+    .hero {
+        height: 686px;
+    }
+
+    .hero-texto {
+        margin-left: 10px;
+    }
+
+    .hero-logo {
+        width: 365px;
+    }
+
+    .hero-txt-azul, .hero-txt-branco {
+        font-size: 14px;
+    }
+
+    .hero-boneca {
+        margin-right: 10px;
+    }
+
+    .hero-forma {
+        width: 285px;
+        top: 9.5%;
+    }
+
+    .hero-luna {
+        width: 300px;
+        top: 16%;
+        left: 11%;
+    }   
+
+    .hero-wrapper {
+        height: 1385px;
+    }
+
+    .hero-container {
+        width: 90%;
+    }
+
+    /*----------------- HIPERFOCO ----------------------*/
+    .hiperfoco {
+        margin-bottom: 135px;
+    }
+
+    .titulo-hiperfoco {
+        margin-top: 100px;
+        font-size: 34px;
+    }
+
+    .hiperfoco-container {
+        gap: 45px;
+    }
+
+    .slider-imagens {
+        height: 340px;
+    }
+
+    .hiperfoco-texto-cards {
+        font-size: 25px;
+    }
+
+    .slider-button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .hiperfoco-seta {
+        width: 22px;
+    }
+
+
+    /*----------------- TDAH ----------------------*/
+    .tdah-txt {
+        font-size: 27px;
+    }
+
+    .tdah-cards {
+        width: 225px;
+        height: 275px;
+    }
+
+
+    /*----------------- SINTOMAS ----------------------*/
+    .principais-sintomas {
+        margin-bottom: 30px;
+    }
+
+    .sintoma-1, .sintoma-2, .sintoma-3 {
+        height: 250px;
+    }
+
+    .titulo-sintomas, .sintomas-titulo-3 {
+        font-size: 24px;
+    }
+
+    .sintomas-txt, .sintomas-txt-3 {
+        font-size: 22px;
+    }
+
+
+    /*------------ HIPERFOCO NO TDAH -----------------*/
+    .hiper-tdah {
+        margin-bottom: 150px;
+    }
+
+    .hiper-tdah-txt {
+        font-size: 25px;
+    }
+
+
+    /*------------- CARACTERISTICAS ------------------*/
+    .titulo-card {
+        font-size: 30px;
+        padding-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .txt-card {
+        font-size: 16px;
+        padding-right: 45px;
+    }
+
+
+    /*------------------ SOBRE -----------------------*/
+    .grid-1 p {
+        margin: 50px;
+        margin-bottom: 30px;
+        font-size: 110px;
+    }
+
+    .grid-1 h3 {
+        margin-left: 50px;
+        font-size: 24px;
+    }
+
+    .sobre-texto {
+        left: 50%;
+    }
+
+    .sobre-texto h1 {
+        font-size: 24px;
+    }
+
+    .sobre-texto p {
+        font-size: 20px;
+    }
+
+
+    /*---------------- OQ SOMOS ---------------------*/
+    .oq-somos-txt {
+        font-size: 25px;
+    }
+
+    .oq-somos-carrossel {
+        width: 430px;
+        margin-right: 25px;
+    }
+
+    .cards-carrossel {
+        height: 400px;
+    }
+
+    .next-btn {
+        padding: 24px 24px;
+    }
+
+    .seta {
+        width: 24px;
+    }
+
+
+    /*----------------- FOOTER ----------------------*/
+    .footer {
+        height: 225px;
+    }
+
+    .footer-wrapper {
+        width: 70%;
+    }
+
+    .logo-footer img {
+        width: 200px;
+    }
+
+    .email-div {
+        width: 175px;
+        height: 90px;
+    }
+
+    .email img {
+        width: 40px;
+    }
+
+    .email p {
+        font-size: 16px;
+    }
+
+    .contatos-logos img {
+        width: 35px;
+    }
+
+    .copyright {
+        font-size: 15px;
+    }
 }
+
+@media only screen and (max-width: 768px) {
+
+    .titulos {
+        margin-bottom: 0px;
+    }
+
+    .txtTitulos {
+        font-size: 30px;
+    }
+
+    /*------------ MENU HAMBURGER -----------------*/
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-menu {
+        z-index: 1;
+        position: absolute;
+        top: 82px;
+        right: 0;
+        width: 45vw;
+        height: 280px;
+        background: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 30px;
+        gap: 40px;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in;
+        box-shadow: 0px 4px 9px rgb(0, 0, 0, 0.1), 0px 6px 16px rgb(0, 0, 0, 0.09), 0px 20px 21px rgb(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        font-size: 25px;
+    }
+
+    .navbar.scrolled .nav-menu {
+        top: 69px; 
+    }
+
+    .nav-menu li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    /*------------------- HERO --------------------*/
+    .hero-logo {
+        width: 330px;
+    }
+
+    .hero-txt-azul, .hero-txt-branco {
+        font-size: 13px;
+    }
+
+    .hero-boneca {
+        margin-right: 15px;
+    }
+
+    .hero-forma {
+        width: 250px;
+        top: 8%;
+    }
+
+    .hero-luna {
+        width: 280px;
+        top: 17%;
+        left: 2%;
+    }  
+
+    .hero-wrapper {
+        height: 1725px;
+    }
+
+
+    /*----------------- HIPERFOCO ----------------------*/
+    .hiperfoco-container {
+        flex-direction: column;
+        padding: 50px 0px;
+        gap: 35px;
+    }
+
+    .slider-imagens {
+        margin: 0;
+        width: 75%;
+    }
+
+    .hiperfoco-texto-container {
+        width: 75%;
+        height: auto;
+    }
+
+    .hiperfoco-texto-cards {
+        width: 95%;
+    }
+
+
+    /*-------------------- TDAH ----------------------*/
+    .tdah-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .tdah-texto {
+        width: 80%;
+    }
+
+    .tdah-txt {
+        width: 100%;
+    }
+
+    .tdah-carrossel {
+        width: 80%;
+    }
+
+
+    /*---------------- SINTOMAS ---------------------*/
+    .sintoma-1, .sintoma-2 {
+        height: 300px;
+        padding: 0px 40px;
+    }
+
+    .sintoma-3 {
+        height: 300px;
+        padding: 15px;
+    }
+
+    .titulo-sintomas, .sintomas-titulo-3 {
+        font-size: 24px;
+    }
+    
+    .sintomas-txt {
+        font-size: 22px;
+        width: 95%;
+    }
+
+    .sintomas-txt-3 {
+        width: 80%;
+    }
+
+    .sintomas-titulo-3, .sintomas-txt-3 {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+ 
+    .bolinha-topo-meio {
+        position: absolute;
+        top: 47.5%;
+        left: 50%;
+    }
+    
+    .bolinha-topo-esquerda {
+        position: absolute;
+        top: 47.5%;
+        left: 22.5%;
+    }
+    
+    .bolinha-topo-direita {
+        position: absolute;
+        top: 47.5%;
+        right: 18.7%;
+    }
+    
+    .bolinha-esquerda {
+        position: absolute;
+        top: 47.5%;
+        left: 0;
+    }
+    
+    .bolinha-direita {
+        position: absolute;
+        top: 47.5%;
+        right: -3.5%;
+    }
+
+
+    /*------------ HIPERFOCO NO TDAH -----------------*/
+    .hiper-tdah-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hiper-tdah-imagens {
+        margin-top: 0px;
+        width: 50%;
+    }
+
+    .hiper-tdah-texto {
+        margin: 0px;
+        width: 70%;
+    }
+
+    .hiper-tdah-txt {
+        width: 100%;
+        font-size: 28px;
+    }
+
+
+    /*------------- CARACTERISTICAS ------------------*/
+    .card {
+        width: 45%;
+        height: 250px;
+    }
+
+    .titulo-card {
+        margin-top: 25px;
+        font-size: 34px;
+    }
+
+    .txt-card {
+        font-size: 21px;
+    }
+
+
+    /*------------------ SOBRE ----------------------*/
+    .grid-equipe {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-1 {
+        grid-column: 1 / span 3;
+        grid-row: auto ;
+        background-color: #011125;
+        aspect-ratio: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .grid-1 p {
+        margin: 20px;
+        margin-left: 50px;
+        font-size: 135px;
+    }
+
+    .grid-1 h3 {
+        font-size: 36px;
+    }
+
+    .grids {
+        aspect-ratio: 1/1;
+    }
+
+    .sobre-texto h1 {
+        font-size: 26px;
+    }
+
+    .sobre-texto p {
+        font-size: 24px;
+    }
+
+
+    /*---------------- OQ SOMOS ---------------------*/
+    .oq-somos {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .oq-somos-texto {
+        width: 75%;
+    }
+
+    .oq-somos-txt {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .oq-somos-carrossel {
+        margin-top: 15px;
+        margin-bottom: 65px;
+    }
+}
+
+
+
+@media only screen and (max-width: 672px) {
+
+    .titulos {
+        gap: 10px;
+    }
+
+    .txtTitulos {
+        font-size: 24px;
+    }
+
+    .traco {
+        width: 25px;
+        border: 2px solid #08678C;
+    }
+
+    /*------------------- NAV ---------------------------*/
+    .navbar {
+        height: 37.5px;
+    }
+
+    .nav-logo {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .nav-menu {
+        top: 69px;
+        width: 50vw;
+        height: 175px;
+        padding-top: 15px;
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 19px;
+    }
+
+
+    /*------------------- HERO ---------------------------*/
+    .hero {
+        border-bottom-left-radius: 75px;
+    }
+
+    .hero-container {
+        margin-top: 25px;
+        flex-direction: column-reverse;
+    }
+
+    .hero-boneca {
+        width: 75%;
+    }
+
+    .hero-forma {
+        width: 260px;
+        top: 17.5%;
+        left: 5%;
+    }
+
+    .hero-luna {
+        top: 15%;
+        left: 15%;
+    }
+
+    .hero-logo {
+        width: 330px;
+    }
+
+    .hero-texto {
+        position: relative;
+        bottom: 8%;
+    }
+
+    .hero-wrapper {
+        height: 1500px;
+    }
+
+
+    /*----------------- HIPERFOCO ----------------------*/
+    .hiperfoco {
+        margin-bottom: 85px;
+    }
+
+    .titulo-hiperfoco {
+        font-size: 32px;
+    }
+
+    .hiperfoco-container {
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        gap: 15px;
+    }
+
+    .slider-imagens {
+        width: 90%;
+        height: 225px;
+    }
+
+    .hiperfoco-texto-container {
+        width: 100%;
+        height: 265px;
+    }
+    
+    .hiperfoco-texto-cards {
+        font-size: 20px;
+        width: 95%;
+    }
+
+
+    /*----------------- TDAH ----------------------*/
+    .tdah {
+        margin-bottom: 80px;
+    }
+
+    .tdah-container {
+        gap: 20px
+    }
+
+    .tdah-texto {
+        width: 92.5%;
+    }
+
+    .tdah-txt {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .tdah-carrossel {
+        width: 100%;
+    }
+
+    .tdah-cards {
+        width: 204px;
+        height: 220px;
+    }
+
+
+    /*----------------- SINTOMAS ----------------------*/
+    .sintomas-titulo {
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+
+    .principais-sintomas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin-bottom: 75px;
+    }
+
+    .sintomas-wrapper {
+        width: 87.5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .sintoma-1, .sintoma-2, .sintoma-3 {
+        padding: 0px 30px;
+        grid-column: 1;
+        width: 84%;
+        height: 200px;
+    }
+
+    .sintoma-1 {
+        grid-row: 1;
+    }
+
+    .sintoma-2 {
+        border-left: 2px solid black;
+        grid-row: 2;
+    }
+
+    .sintoma-3 {
+        margin: 0px;
+        grid-row: 3;
+    }
+
+    .sintomas-titulo-3, .sintomas-txt-3 {
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .titulo-sintomas, .sintomas-titulo-3 {
+        margin-bottom: 15px;
+        font-size: 21px;
+    }
+
+    .sintomas-txt, .sintomas-txt-3 {
+        font-size: 20px;
+    }
+
+    .bolinha {
+        width: 0px;
+        border: 0px;
+    }
+
+    .cima-direita {
+        right: 0px;
+        top: -202px;
+    }
+
+
+    /*------------ HIPERFOCO NO TDAH -----------------*/
+    .hiper-tdah {
+        margin-bottom: 75px;
+    }
+
+    .hiper-tdah-container {
+        gap: 0px;
+    }
+
+    .hiper-tdah-texto {
+        width: 95%;
+    }
+
+    .hiper-tdah-txt {
+        font-size: 20px;
+    }
+
+    .hiper-tdah-imagens {
+        margin: 0px;
+        width: 70%;
+    }
+
+    /*------------- CARACTERISTICAS ------------------*/
+
+    .cards {
+        display: grid;
+        justify-content: start;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(2, 1fr);
+        overflow-x: auto;
+        height: 550px; 
+        margin-top: 25px;
+    }
+
+    .card {
+        width: 82.5%;
+        height: 225px;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    .titulo-card {
+        padding: 0px 35px;
+        font-size: 26px;
+    }
+
+    .txt-card {
+        padding: 0px 35px;
+        font-size: 20px;
+    }
+
+
+    /*------------------ SOBRE ----------------------*/
+    .grid-equipe {
+        margin: 0px;
+    }
+
+    .grid-1 p {
+        margin: 10px;
+        font-size: 80px;
+    }
+
+    .grid-1 h3 {
+        font-size: 23px;
+    }
+
+    .sobre-texto h1 {
+        font-size: 14px;
+    }
+
+    .sobre-texto p {
+        font-size: 12px;
+    }
+
+
+    /*---------------- OQ SOMOS ---------------------*/
+    .oq-somos {
+        align-items: start;
+    }
+
+    .oq-somos-texto {
+        width: 95%;
+        margin-left: 17px;
+    }
+
+    .oq-somos-txt {
+        font-size: 21px;
+    }
+
+    .oq-somos-carrossel {
+        width: 70%;
+    }
+
+    .cards-carrossel {
+        height: 250px;
+    }
+
+    .next-btn {
+        padding: 14px 14px;
+    }
+
+    .seta {
+        width: 18px;
+    }
+
+
+     /*----------------- FOOTER ----------------------*/
+     .footer {
+        height: 140px;
+    }
+    
+    .footer-wrapper {
+        width: 80%;
+    }
+
+    .logo-footer img {
+        width: 100px;
+    }
+
+    .email-div {
+        width: 100px;
+        height: 60px;
+    }
+
+    .email img {
+        width: 25px;
+    }
+
+    .email p {
+        font-size: 10px;
+    }
+
+    .contatos-logos img {
+        width: 20px;
+    }
+
+    .barra-baixo {
+        margin-top: 18px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
+

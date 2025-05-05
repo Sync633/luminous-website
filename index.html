@@ -8,25 +8,31 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
-<script src="js/script.js"></script>
-
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#topo" class="logo-link">
-                <div class="logo">
-                    <img src="images/luminous-azul-escuro.svg" class="nav-logo">
-                </div>
-            </a>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="#topo" class="logo-link">
+                    <div class="logo">
+                        <img src="images/luminous-azul-escuro.svg" class="nav-logo">
+                    </div>
+                </a>
 
-            <ul class="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="#hiperfoco">Hiperfoco</a></li>
-                <li class="nav-item"><a class="nav-link" href="#tdah">TDAH</a></li>
-                <li class="nav-item"><a class="nav-link" href="#hiper-tdah">Hiperfoco no TDAH</a></li>
-                <li class="nav-item"><a class="nav-link" href="#luna">Sobre o Luna</a></li>
-            </ul>
-        </div>
-    </nav>
+                <div class="menu-mobile">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+    
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="#hiperfoco">Hiperfoco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tdah">TDAH</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hiper-tdah">Hiperfoco no TDAH</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#luna">Sobre o Luna</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <div class="hero-wrapper" id="topo">
     </div>
@@ -168,9 +174,11 @@
                 <div class="bolinha-topo-esquerda bolinha"></div>
                 <div class="bolinha-topo-direita bolinha"></div>
             </div>
+            
+            <div id="hiper-tdah"></div>
         </section>
 
-        <section class="hiper-tdah" id="hiper-tdah">
+        <section class="hiper-tdah">
 
             <div class="hiper-tdah-container">
                 <div class="hiper-tdah-imagens">
@@ -228,10 +236,12 @@
                         desaparecer rapidamente.</p>
                 </div>
             </div>
+            
+            <div></div>
         </section>
 
 
-        <section id="sobre" class="sobre">
+        <section class="sobre">
             <div class="titulos">
                 <div class="traco"></div>
                 <h1 class="txtTitulos">Sobre o Luminous</h1>
@@ -298,9 +308,10 @@
                 </div>
 
             </div>
+            <div id="luna"></div>
         </section>
 
-        <section class="oq-somos" id="luna">
+        <section class="oq-somos">
             <div class="oq-somos-texto">
                 <div class="titulos" style="margin-bottom: 0;">
                     <div class="traco"></div>
@@ -360,6 +371,8 @@
             </div>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
