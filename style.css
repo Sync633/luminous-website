@@ -170,7 +170,7 @@ body {
     position: absolute;
     z-index: -100;
     width: 100%;
-    height: 1750px;
+    height: 2000px;
     background-color: #011126;
 }
 
@@ -237,6 +237,276 @@ body {
     left: 11%;
 }
 
+/*------------------------------ SOBRE O LUMINOUS -----------------------------------------------------*/
+
+.sobre {
+    padding: 10px;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+
+.sobre-txtTitulos {
+    font-size: 32px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+/*  -------- AREA SOBRE A EMPRESA ----------------------------------------------------*/
+
+.sobre-texto-container {
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.sobre-txt {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 325;
+    margin: 0;
+}
+
+.sobre-andar-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 115px;
+}
+
+.sobre-texto-1 {
+    width: 43%;
+}
+
+.sobre-imagem-1 {
+    display: flex;
+    justify-content: center;
+    width: 37.5%;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    height: 300px;
+    margin-right: 100px;
+}
+
+.sobre-imagem-1 img {
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.sobre-andar-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 250px;
+}
+
+.sobre-imagem-2 {
+    margin-left: 15px;
+}
+
+.sobre-texto-2 {
+    width: 47.5%;
+    margin-right: 35px;
+}
+
+/*  -------- GRID TIME ---------------------------------------------------------------*/
+
+.grid-equipe{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 5px;
+}
+
+.grid-1 {
+    grid-row: 1 / span 2;
+    background-color: #011125;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.grid-1 p {
+    margin: 80px;
+    margin-bottom: 50px;
+    padding: 0;
+    font-size: 150px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+
+.grid-1 h3 {
+    margin-left: 80px;
+    color: white;
+    font-size: 30px;
+}
+
+.grids {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.fotos-equipe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-luna {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-luna img {
+    width: 75%;
+}
+
+/*  -------- OVERLAY FOTOS ---------------------------------------------------------------*/
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(1, 17, 37, 0.66);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.4s ease;
+}
+  
+.grids:hover .overlay {
+    height: 100%;
+}
+  
+.overlay-texto {
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap; 
+    color: white;
+    top: 77.5%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-texto h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.overlay-texto p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 275;
+}
+
+
+/*----------------------------------- SEÇÂO LUNA -------------------------------------------*/
+.oq-somos {
+    padding: 10px;
+    margin-bottom: 150px;
+    margin-right: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.oq-somos-texto {
+    width: 50%;
+}
+
+.oq-somos-txt {
+    margin-top: 0px;
+    margin-left: 5px;
+    text-justify: auto;
+    width: 77%;
+    font-size: 29px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.oq-somos-carrossel {
+    width: 500px;
+    position: relative;
+}
+
+/* Estilos do Carrossel */
+.carrossel-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards-carrossel {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.carrossel-card {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .4s ease;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carrossel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    box-shadow: 0px 4px 9px rgb(0, 0, 0, 0.7), 0px 6px 16px rgb(0, 0, 0, 0.4), 0px 20px 21px rgb(0, 0, 0, 0.25);
+}
+
+.carrossel-card.active {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 3;
+}
+
+.carrossel-card.next {
+    transform: translateX(80px) scale(0.9);
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.seta {
+    width: 27.5px;
+}
+
+.next-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #011126;
+    color: white;
+    border: none;
+    padding: 24px 24px;
+    cursor: pointer;
+    font-size: 32px;
+    transition: all 0.3s;
+    position: absolute;
+    right: -90px;
+    z-index: 4;
+}
+
+.next-btn:hover {
+    transform: scale(1.1);
+    background: #011126;
+}
+
+
 /*--------------------------------- HIPERFOCO ----------------------------------------------------------*/
 
 .hiperfoco {
@@ -244,14 +514,15 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin-bottom: 175px;
+    margin-top: 100px;
+    margin-bottom: 150px;
 }
 
 .titulo-hiperfoco {
-    margin-top: 150px;
     font-family: "Inter";
-    font-size: 42px;
-    color: #FFFFFF;
+    font-size: 43px;
+    color: #011126;
+    margin-bottom: 50px;
 }
 
 .hiperfoco-container {
@@ -261,7 +532,7 @@ body {
     justify-content: center;
     width: 86%;
     aspect-ratio: 1200/460;
-    background-color: #FFFFFF;
+    background-color: #011125;
     border-radius: 15px;
     gap: 40px;
     padding: 20px;
@@ -313,10 +584,11 @@ body {
 .hiperfoco-texto-cards {
     margin-top: 0px;
     margin-left: 5px;
-    width: 85%;
-    font-size: 33px;
+    width: 80%;
+    font-size: 31px;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 325;
+    color: #FFFFFF;
 }
 
 .slider-button.prev {
@@ -339,7 +611,7 @@ body {
 }
 
 .slider-button {
-    background: #011125;
+    background: #FFFFFF;
     color: white;
     border: none;
     width: 54px;
@@ -357,6 +629,11 @@ body {
 .slider-button:hover {
     transform: scale(1.1);
 }
+
+.slider-button:disabled {
+    opacity: 0.4;
+    cursor: auto;
+  }
 
 .hiperfoco-seta {
     width: 24px;
@@ -380,21 +657,19 @@ body {
 }
 
 .tdah-texto {
-    width: 50%;
+    width: 45%;
 }
 
 .tdah-txt {
     margin-top: 0px;
-    margin-left: 5px;
-    text-justify: auto;
-    width: 77%;
+    width: 85%;
     font-size: 29px;
     font-style: italic;
     font-weight: 300;
 }
 
 .tdah-carrossel {
-    width: 50%;
+    width: 55%;
     overflow: hidden;
 }
 
@@ -402,13 +677,16 @@ body {
     display: flex;
     transition: transform 0.5s ease;
     position: relative;
+    user-select: none;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 .tdah-cards {
     flex-shrink: 0;
     margin: 0 15px;
-    width: 250px;
-    height: 300px;
+    width: 275px;
+    height: 330px;
     box-shadow: 0px 4px 9px rgb(0, 0, 0, 0.4), 0px 6px 10px rgb(0, 0, 0, 0.2)
 }
 
@@ -417,6 +695,7 @@ body {
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+    filter: brightness(80%);
 }
 /*--------------------------------- PRINCIPAIS SINTOMAS ----------------------------------------------*/
 
@@ -696,211 +975,6 @@ body {
 .card:hover .txt-card {
     transition: 0.5s;
     color: #ffffff;
-}
-
-
-
-/*------------------------------- SEÇÂO SOBRE -----------------------------------------------------*/
-
-.sobre {
-    padding: 10px;
-    margin-bottom: 100px;
-}
-
-/*  -------- GRID TIME ---------------------------------------------------------------*/
-
-.grid-equipe{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 5px;
-}
-
-.grid-1 {
-    grid-row: 1 / span 2;
-    background-color: #011125;
-    height: 100%;
-    aspect-ratio: 1/1;
-}
-
-.grid-1 p {
-    margin: 80px;
-    margin-bottom: 50px;
-    padding: 0;
-    font-size: 150px;
-    font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-}
-
-.grid-1 h3 {
-    margin-left: 80px;
-    color: white;
-    font-size: 30px;
-}
-
-.grids {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-}
-
-.fotos-equipe {
-    width: 100%;
-    height: 100%;
-}
-
-.grid-luna {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.grid-luna img {
-    width: 75%;
-}
-
-/*  -------- OVERLAY FOTOS ---------------------------------------------------------------*/
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(1, 17, 37, 0.66);
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: 0.4s ease;
-}
-  
-.grids:hover .overlay {
-    height: 100%;
-}
-  
-.sobre-texto {
-    position: absolute;
-    overflow: hidden;
-    white-space: nowrap; 
-    color: white;
-    top: 77.5%;
-    left: 44%;
-    transform: translate(-50%, -50%);
-}
-
-.sobre-texto h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-.sobre-texto p {
-    margin: 0;
-    margin-bottom: 20px;
-    font-style: italic;
-    font-size: 22px;
-    font-weight: 275;
-}
-
-/*----------------------------------- SEÇÂO OQ SOMOS-------------------------------------------*/
-.oq-somos {
-    padding: 10px;
-    margin-bottom: 75px;
-    margin-right: 75px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.oq-somos-texto {
-    width: 50%;
-}
-
-.oq-somos-txt {
-    margin-top: 0px;
-    margin-left: 5px;
-    text-justify: auto;
-    width: 77%;
-    font-size: 29px;
-    font-style: italic;
-    font-weight: 300;
-}
-
-.oq-somos-carrossel {
-    width: 500px;
-    position: relative;
-}
-
-/* Estilos do Carrossel */
-.carrossel-container {
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.cards-carrossel {
-    position: relative;
-    width: 100%;
-    height: 450px;
-}
-
-.carrossel-card {
-    position: absolute;
-    width: 65%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: all .4s ease;
-    opacity: 0;
-    z-index: 1;
-}
-
-.carrossel-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 0px 4px 9px rgb(0, 0, 0, 0.7), 0px 6px 16px rgb(0, 0, 0, 0.4), 0px 20px 21px rgb(0, 0, 0, 0.25);
-}
-
-.carrossel-card.active {
-    transform: translateX(0) scale(1);
-    opacity: 1;
-    z-index: 3;
-}
-
-.carrossel-card.next {
-    transform: translateX(80px) scale(0.9);
-    opacity: 0.6;
-    z-index: 2;
-}
-
-.seta {
-    width: 27.5px;
-}
-
-.next-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #011126;
-    color: white;
-    border: none;
-    padding: 24px 24px;
-    cursor: pointer;
-    font-size: 32px;
-    transition: all 0.3s;
-    position: absolute;
-    right: -90px;
-    z-index: 4;
-}
-
-.next-btn:hover {
-    transform: scale(1.1);
-    background: #011126;
 }
 
 /*----------------------------------- FOOTER -----------------------------------------------------*/
@@ -1423,15 +1497,15 @@ body {
         font-size: 24px;
     }
 
-    .sobre-texto {
+    .overlay-texto {
         left: 50%;
     }
 
-    .sobre-texto h1 {
+    .overlay-texto h1 {
         font-size: 24px;
     }
 
-    .sobre-texto p {
+    .overlay-texto p {
         font-size: 20px;
     }
 
@@ -1742,11 +1816,11 @@ body {
         aspect-ratio: 1/1;
     }
 
-    .sobre-texto h1 {
+    .overlay-texto h1 {
         font-size: 26px;
     }
 
-    .sobre-texto p {
+    .overlay-texto p {
         font-size: 24px;
     }
 
@@ -2051,11 +2125,11 @@ body {
         font-size: 23px;
     }
 
-    .sobre-texto h1 {
+    .overlay-texto h1 {
         font-size: 14px;
     }
 
-    .sobre-texto p {
+    .overlay-texto p {
         font-size: 12px;
     }
 

@@ -91,27 +91,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextButton = document.querySelector('.next');
     let slideIndex = 0;
     const totalSlides = 2;
-
-    const moveSlides = () => {
-        const translateValue = `-${slideIndex * 50}%`;
-        sliderWrapper.style.transform = `translateX(${translateValue})`;
-        textosWrapper.style.transform = `translateX(${translateValue})`;
+  
+    const updateButtons = () => {
+      prevButton.disabled = slideIndex === 0;
+      nextButton.disabled = slideIndex === totalSlides - 1;
     };
-
+  
+    const moveSlides = () => {
+      const translateValue = `-${slideIndex * 50}%`;
+      sliderWrapper.style.transform = `translateX(${translateValue})`;
+      textosWrapper.style.transform = `translateX(${translateValue})`;
+      updateButtons();
+    };
+  
+    // Inicializa estado dos botões
+    updateButtons();
+  
     prevButton.addEventListener('click', () => {
-        if (slideIndex > 0) {
-            slideIndex--;
-            moveSlides();
-        }
+      if (slideIndex > 0) {
+        slideIndex--;
+        moveSlides();
+      }
     });
-
+  
     nextButton.addEventListener('click', () => {
-        if (slideIndex < totalSlides - 1) {
-            slideIndex++;
-            moveSlides();
-        }
+      if (slideIndex < totalSlides - 1) {
+        slideIndex++;
+        moveSlides();
+      }
     });
-});
+  });
 
 
 
@@ -151,11 +160,11 @@ class MobileNavbar {
       }
       return this;
     }
-  }
+}
   
-  const mobileNavbar = new MobileNavbar(
+const mobileNavbar = new MobileNavbar(
     ".menu-mobile",
     ".nav-menu",
     ".nav-menu li",
-  );
-  mobileNavbar.init();
+);
+mobileNavbar.init();
