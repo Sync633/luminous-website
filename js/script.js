@@ -87,8 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const sliderWrapper = document.querySelector('.slider-wrapper');
     const textosWrapper = document.querySelector('.textos-wrapper');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
+    const prevButton = document.querySelector('.anterior');
+    const nextButton = document.querySelector('.proximo');
     let slideIndex = 0;
     const totalSlides = 2;
   
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   
     const moveSlides = () => {
-      const translateValue = `-${slideIndex * 50}%`;
+      const translateValue = `-${slideIndex * 50}%`; 
       sliderWrapper.style.transform = `translateX(${translateValue})`;
       textosWrapper.style.transform = `translateX(${translateValue})`;
       updateButtons();

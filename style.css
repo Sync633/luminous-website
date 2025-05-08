@@ -170,7 +170,7 @@ body {
     position: absolute;
     z-index: -100;
     width: 100%;
-    height: 2000px;
+    height: 1960px;
     background-color: #011126;
 }
 
@@ -251,11 +251,19 @@ body {
     font-weight: 600;
 }
 
+.sobre-traco {
+    width: 35px;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+
 /*  -------- AREA SOBRE A EMPRESA ----------------------------------------------------*/
 
 .sobre-texto-container {
     margin-left: 65px;
-    margin-right: 65px;
+    margin-right: 25px;
 }
 
 .sobre-txt {
@@ -270,25 +278,26 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 115px;
+    margin-bottom: 85px;
+    margin-left: 35px;
 }
 
 .sobre-texto-1 {
-    width: 43%;
+    width: 42%;
 }
 
 .sobre-imagem-1 {
     display: flex;
     justify-content: center;
-    width: 37.5%;
+    align-items: center;
+    width: 42%;
     border-radius: 15px;
-    background-color: #FFFFFF;
     height: 300px;
-    margin-right: 100px;
+    margin-right: 90px;
 }
 
 .sobre-imagem-1 img {
-    width: 400px;
+    width: 450px;
     margin-bottom: 50px;
 }
 
@@ -304,8 +313,8 @@ body {
 }
 
 .sobre-texto-2 {
-    width: 47.5%;
-    margin-right: 35px;
+    width: 45%;
+    margin-right: 75px;
 }
 
 /*  -------- GRID TIME ---------------------------------------------------------------*/
@@ -1155,6 +1164,39 @@ body {
     }
 
 
+    /*-------------- SOBRE O LUMINOUS  ----------------*/
+    
+    .grid-1 p {
+        font-size: 220px;
+    }
+    
+    .grid-1 h3 {
+        font-size: 43px;
+    }
+    
+    /*------------------ SEÇÂO LUNA -------------------*/
+    
+    .oq-somos-txt {
+        font-size: 44px;
+    }
+    
+    .oq-somos-carrossel {
+        width: 667px;
+    }
+    
+    .cards-carrossel {
+        height: 600px;
+    }
+    
+    .next-btn {
+        padding: 40px 40px;
+    }
+    
+    .seta {
+        width: 40px;
+    }
+
+
     /*---------------- HIPERFOCO ------------------------*/
 
     .slider-imagens {
@@ -1239,39 +1281,6 @@ body {
     .txt-card {
         padding-left: 70px;
         font-size: 26px;
-    }
-
-
-    /*--------------------- SOBRE ----------------------*/
-    
-    .grid-1 p {
-        font-size: 220px;
-    }
-
-    .grid-1 h3 {
-        font-size: 43px;
-    }
-
-    /*------------------- OQ SOMOS --------------------*/
-
-    .oq-somos-txt {
-        font-size: 44px;
-    }
-
-    .oq-somos-carrossel {
-        width: 667px;
-    }
-
-    .cards-carrossel {
-        height: 600px;
-    }
-
-    .next-btn {
-        padding: 40px 40px;
-    }
-
-    .seta {
-        width: 40px;
     }
 
 
@@ -1394,11 +1403,91 @@ body {
     }   
 
     .hero-wrapper {
-        height: 1385px;
+        height: 1700px;
     }
 
     .hero-container {
         width: 90%;
+    }
+
+
+    /*-------------- SOBRE O LUMINOUS  ----------------*/
+    .sobre-texto-container {
+        margin: 0px;
+    }
+
+    .sobre-txt {
+        font-size: 26px;
+    }
+
+    .sobre-texto-1 {
+        margin-left: 15px;
+    }
+
+    .sobre-imagem-1 {
+        margin-right: 75px;
+    }
+
+    .sobre-imagem-1 img {
+        width: 350px;
+    }
+
+    .sobre-texto-2 {
+        margin-right: 50px;
+    }
+
+    .sobre-imagem-2 {
+        margin-left: 40px;
+    }
+
+    .sobre-imagem-2 img {
+        width: 360px;
+    }
+
+    .grid-1 p {
+        margin: 50px;
+        margin-bottom: 30px;
+        font-size: 110px;
+    }
+    
+    .grid-1 h3 {
+         margin-left: 50px;
+        font-size: 24px;
+    }
+    
+    .overlay-texto {
+        left: 50%;
+    }
+    
+    .overlay-texto h1 {
+        font-size: 24px;
+    }
+    
+    .overlay-texto p {
+        font-size: 20px;
+    }
+    
+    
+    /*------------------ SEÇÂO LUNA -------------------*/
+    .oq-somos-txt {
+        font-size: 25px;
+    }
+    
+    .oq-somos-carrossel {
+            width: 430px;
+        margin-right: 25px;
+    }
+    
+    .cards-carrossel {
+        height: 400px;
+    }
+    
+    .next-btn {
+        padding: 24px 24px;
+    }
+    
+    .seta {
+        width: 24px;
     }
 
     /*----------------- HIPERFOCO ----------------------*/
@@ -1482,54 +1571,6 @@ body {
     .txt-card {
         font-size: 16px;
         padding-right: 45px;
-    }
-
-
-    /*------------------ SOBRE -----------------------*/
-    .grid-1 p {
-        margin: 50px;
-        margin-bottom: 30px;
-        font-size: 110px;
-    }
-
-    .grid-1 h3 {
-        margin-left: 50px;
-        font-size: 24px;
-    }
-
-    .overlay-texto {
-        left: 50%;
-    }
-
-    .overlay-texto h1 {
-        font-size: 24px;
-    }
-
-    .overlay-texto p {
-        font-size: 20px;
-    }
-
-
-    /*---------------- OQ SOMOS ---------------------*/
-    .oq-somos-txt {
-        font-size: 25px;
-    }
-
-    .oq-somos-carrossel {
-        width: 430px;
-        margin-right: 25px;
-    }
-
-    .cards-carrossel {
-        height: 400px;
-    }
-
-    .next-btn {
-        padding: 24px 24px;
-    }
-
-    .seta {
-        width: 24px;
     }
 
 
@@ -1643,7 +1684,111 @@ body {
     }  
 
     .hero-wrapper {
-        height: 1725px;
+        height: 2225px;
+    }
+
+
+    /*-------------- SOBRE O LUMINOUS  ----------------*/
+    .sobre-txt {
+        font-size: 28px;
+    }
+
+    .sobre-andar-1 {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .sobre-texto-1 {
+        width: 75%;
+        margin: 0px;
+    }
+
+    .sobre-imagem-1 {
+        width: 100%;
+        margin: 0px;
+    }
+    .sobre-imagem-1 img {
+        width: 450px;
+    }
+
+    .sobre-andar-2 {
+        flex-direction: column;
+    }
+
+    .sobre-imagem-2 {
+        margin: 0px;
+        margin-bottom: 75px;
+    }
+
+    .sobre-imagem-2 img {
+        width: 450px;
+    }
+
+    .sobre-texto-2 {
+        width: 75%;
+        margin: 0px;
+    }
+
+    .grid-equipe {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .grid-1 {
+        grid-column: 1 / span 3;
+        grid-row: auto ;
+        background-color: #011125;
+        aspect-ratio: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .grid-1 p {
+        margin: 20px;
+        margin-left: 50px;
+        font-size: 135px;
+    }
+    
+    .grid-1 h3 {
+        font-size: 36px;
+    }
+    
+    .grids {
+        aspect-ratio: 1/1;
+    }
+    
+    .overlay-texto h1 {
+        font-size: 26px;
+    }
+    
+    .overlay-texto p {
+        font-size: 24px;
+    }
+    
+    
+    /*------------------ SEÇÂO LUNA -------------------*/
+    .oq-somos {
+        flex-direction: column;
+        margin: 0px;
+    }
+    
+    .oq-somos-texto {
+        width: 75%;
+    }
+    
+    .oq-somos-txt {
+        width: 100%;
+        font-size: 28px;
+    }
+    
+    .oq-somos-carrossel {
+        margin-top: 15px;
+        margin-bottom: 65px;
     }
 
 
@@ -1785,65 +1930,6 @@ body {
         font-size: 21px;
     }
 
-
-    /*------------------ SOBRE ----------------------*/
-    .grid-equipe {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .grid-1 {
-        grid-column: 1 / span 3;
-        grid-row: auto ;
-        background-color: #011125;
-        aspect-ratio: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .grid-1 p {
-        margin: 20px;
-        margin-left: 50px;
-        font-size: 135px;
-    }
-
-    .grid-1 h3 {
-        font-size: 36px;
-    }
-
-    .grids {
-        aspect-ratio: 1/1;
-    }
-
-    .overlay-texto h1 {
-        font-size: 26px;
-    }
-
-    .overlay-texto p {
-        font-size: 24px;
-    }
-
-
-    /*---------------- OQ SOMOS ---------------------*/
-    .oq-somos {
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    .oq-somos-texto {
-        width: 75%;
-    }
-
-    .oq-somos-txt {
-        width: 100%;
-        font-size: 28px;
-    }
-
-    .oq-somos-carrossel {
-        margin-top: 15px;
-        margin-bottom: 65px;
-    }
 }
 
 
@@ -1921,9 +2007,101 @@ body {
     }
 
     .hero-wrapper {
-        height: 1500px;
+        height: 1950px;
     }
 
+    /*-------------- SOBRE O LUMINOUS  ----------------*/
+    .sobre {
+        margin-bottom: 75px;
+    }
+
+    .sobre-texto-container {
+        margin: 0px 15px;
+    }
+
+    .sobre-txt {
+        font-size: 21px;
+    }
+    
+    .sobre-andar-1 {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .sobre-texto-1 {
+        width: 100%;
+    }
+    
+    .sobre-imagem-1 img {
+        width: 300px;
+    }
+
+    .sobre-andar-2 {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 85px;
+    }
+
+    .sobre-imagem-2 img {
+        width: 325px;
+    }
+
+    .sobre-texto-2 {
+        width: 100%;
+    }
+
+    .grid-equipe {
+         margin: 0px;
+    }
+    
+    .grid-1 p {
+        margin: 10px;
+        font-size: 80px;
+    }
+    
+    .grid-1 h3 {
+        font-size: 23px;
+    }
+    
+    .overlay-texto h1 {
+        font-size: 14px;
+    }
+    
+    .overlay-texto p {
+        font-size: 12px;
+    }
+    
+    
+    /*------------------ SEÇÂO LUNA -------------------*/
+    .oq-somos {
+        align-items: start;
+    }
+    
+    .oq-somos-texto {
+         width: 95%;
+        margin-left: 17px;
+    }
+    
+    .oq-somos-txt {
+        font-size: 21px;
+    }
+    
+    .oq-somos-carrossel {
+        width: 70%;
+    }
+    
+    .cards-carrossel {
+        height: 250px;
+    }
+    
+    .next-btn {
+        padding: 14px 14px;
+    }
+    
+    .seta {
+        width: 18px;
+    }
+        
 
     /*----------------- HIPERFOCO ----------------------*/
     .hiperfoco {
@@ -2107,64 +2285,6 @@ body {
     }
 
 
-    /*------------------ SOBRE ----------------------*/
-    .sobre {
-        margin-bottom: 75px;
-    }
-
-    .grid-equipe {
-        margin: 0px;
-    }
-
-    .grid-1 p {
-        margin: 10px;
-        font-size: 80px;
-    }
-
-    .grid-1 h3 {
-        font-size: 23px;
-    }
-
-    .overlay-texto h1 {
-        font-size: 14px;
-    }
-
-    .overlay-texto p {
-        font-size: 12px;
-    }
-
-
-    /*---------------- OQ SOMOS ---------------------*/
-    .oq-somos {
-        align-items: start;
-    }
-
-    .oq-somos-texto {
-        width: 95%;
-        margin-left: 17px;
-    }
-
-    .oq-somos-txt {
-        font-size: 21px;
-    }
-
-    .oq-somos-carrossel {
-        width: 70%;
-    }
-
-    .cards-carrossel {
-        height: 250px;
-    }
-
-    .next-btn {
-        padding: 14px 14px;
-    }
-
-    .seta {
-        width: 18px;
-    }
-
-
     /*----------------- FOOTER ----------------------*/
     .footer {
         height: 140px;
@@ -2211,6 +2331,12 @@ body {
     }
 
 
+    /*-------------- SOBRE O LUMINOUS  ----------------*/
+    .grid-1 p {
+        font-size: 78px;
+    }
+
+
     /*------------ HIPERFOCO NO TDAH -----------------*/
     .hiper-tdah-imagens {
         height: 300px;
@@ -2221,17 +2347,28 @@ body {
     .card {
         height: 185px;
     }
-
-    /*------------------ SOBRE ----------------------*/
-    .grid-1 p {
-      font-size: 78px;
-    }
 }
 
 @media only screen and (max-width: 355px) {
     /*------------------- HERO --------------------*/
     .hero-logo {
         width: 300px;
+    }
+
+
+    /*-------------- SOBRE O LUMINOUS  ----------------*/
+    .grid-1 p {
+        font-size: 60px;
+    }
+        
+    .grid-1 h3 {
+        font-size: 18px;
+    }
+
+
+    /*------------------ SEÇÂO LUNA -------------------*/
+    .cards-carrossel {
+        height: 225px;
     }
 
 
@@ -2253,21 +2390,7 @@ body {
         height: 190px;
     }
 
-    
-    /*------------------ SOBRE ----------------------*/
-    .grid-1 p {
-        font-size: 72px;
-    }
-    
-    .grid-1 h3 {
-        font-size: 22px;
-    }
 
-
-    /*---------------- OQ SOMOS ---------------------*/
-    .cards-carrossel {
-        height: 225px;
-    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -2315,19 +2438,11 @@ body {
 
     /*------------- CARACTERISTICAS ------------------*/
     .card {
-         width: 92.5%;
+        width: 92.5%;
     }
 
-    /*------------------ SOBRE ----------------------*/
-    .grid-1 p {
-        font-size: 60px;
-    }
-    
-    .grid-1 h3 {
-        font-size: 18px;
-    }
 
-    /*---------------- OQ SOMOS ---------------------*/
+    /*------------------ SEÇÂO LUNA -------------------*/
     .oq-somos-txt {
         font-size: 19px;
     }
