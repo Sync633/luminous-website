@@ -1,3 +1,5 @@
+// ------------ Animação da NAVBAR ------------ //
+
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     const navbarconteiner = document.querySelector('.navbar-container');
@@ -7,6 +9,7 @@ window.addEventListener('scroll', () => {
 
 
 
+// ------------ Carrossel da Seção SOBRE O LUNA ------------ //
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.carrossel-card');
     const nextBtn = document.querySelector('.next-btn');
@@ -36,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Adicione este JavaScript
+// ------------ Carrossel da Seção TDAH ------------ //
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.tdah-carrossel-conteiner');
     const slides = document.querySelectorAll('.tdah-cards');
@@ -75,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, {once: true});
     };
 
-    // Event listeners unificados
     container.addEventListener('touchstart', handleStart);
     container.addEventListener('mousedown', handleStart);
     container.addEventListener('touchend', handleEnd);
@@ -84,6 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+// ------------ Carrossel da Seção HIPERFOCO ------------ //
 document.addEventListener('DOMContentLoaded', () => {
     const sliderWrapper = document.querySelector('.slider-wrapper');
     const textosWrapper = document.querySelector('.textos-wrapper');
@@ -120,10 +124,10 @@ document.addEventListener('DOMContentLoaded', () => {
         moveSlides();
       }
     });
-  });
+});
 
 
-
+// ------------ MENU HAMBURGER MOBILE ------------ //
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
       this.mobileMenu = document.querySelector(mobileMenu);
@@ -161,7 +165,6 @@ class MobileNavbar {
       return this;
     }
 }
-  
 const mobileNavbar = new MobileNavbar(
     ".menu-mobile",
     ".nav-menu",
