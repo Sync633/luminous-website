@@ -242,7 +242,7 @@ body {
 .sobre {
     padding: 10px;
     margin-bottom: 150px;
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .sobre-txtTitulos {
@@ -310,6 +310,10 @@ body {
 
 .sobre-imagem-2 {
     margin-left: 15px;
+}
+
+.sobre-imagem-2 img {
+    border-radius: 10px;
 }
 
 .sobre-texto-2 {
@@ -684,12 +688,19 @@ body {
 
 .tdah-carrossel-conteiner {
     display: flex;
-    transition: transform 0.5s ease;
+    animation: scroll 7.5s linear infinite;
     position: relative;
     user-select: none;
-    will-change: transform;
-    backface-visibility: hidden;
 }
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-305px * 3));
+    }
+  }
 
 .tdah-cards {
     flex-shrink: 0;
@@ -880,7 +891,7 @@ body {
 .hiper-tdah-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 75px;
 }
 
 .hiper-tdah-imagens {
