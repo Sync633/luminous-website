@@ -15,6 +15,37 @@ body {
     /* border: 1px solid black;  */
 }
 
+/*  --------------------------------- Lâmpadas Fundo -------------------------------------------*/
+.lampada-0 {
+    position: absolute;
+    width: 180px;
+    right: 0px;
+    top: 1025px;
+    overflow: visible;
+    transform: rotateY(180deg);
+}
+
+.lampada-1 {
+    position: absolute;
+    width: 175px;
+    right: 0px;
+    top: 4675px
+}
+
+.lampada-2 {
+    position: absolute;
+    width: 180px;
+    left: 0px;
+    top: 6300px
+}
+
+.lampada-3 {
+    position: absolute;
+    width: 180px;
+    left: 0px;
+    top: 3175px
+}
+
 /*  ------------------------------------ TITULOS -----------------------------------------------*/
 .titulos {
     display: flex;
@@ -168,14 +199,14 @@ body {
 
 .hero-wrapper {
     position: absolute;
-    z-index: -100;
+    z-index: -1;
     width: 100%;
     height: 1960px;
     background-color: #011126;
 }
 
 .hero {
-    height: 870px;
+    height: 875px;
     width: 100%;
     background-color: #FFFFFF;
     border-bottom-left-radius: 175px;
@@ -245,6 +276,14 @@ body {
     margin-top: 75px;
 }
 
+.sobre-titulo {
+    display: flex;
+    align-items: center;
+    
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
 .sobre-txtTitulos {
     font-size: 32px;
     color: #FFFFFF;
@@ -262,13 +301,13 @@ body {
 /*  -------- AREA SOBRE A EMPRESA ----------------------------------------------------*/
 
 .sobre-texto-container {
-    margin-left: 65px;
+    margin-left: 85px;
     margin-right: 25px;
 }
 
 .sobre-txt {
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 29px;
     font-style: italic;
     font-weight: 325;
     margin: 0;
@@ -1340,6 +1379,14 @@ body {
 
 }
 
+@media only screen and (max-width: 1440px) {
+    /*----------- Lampada Background -------------------*/
+
+    .lampada-0, .lampada-1, .lampada-2, .lampada-3 {
+        width: 125px;
+    }
+}
+
 
 @media only screen and (max-width: 1024px) {
 
@@ -1419,6 +1466,32 @@ body {
 
     .hero-container {
         width: 90%;
+    }
+
+
+    /*----------- Lampada Background -------------------*/
+    .lampada-0 {
+        width: 70px;
+        right: 0px;
+        top: 850px;
+    }
+    
+    .lampada-1 {
+        width: 100px;
+        right: 0px;
+        top: 4130px
+    }
+    
+    .lampada-2 {
+        width: 100px;
+        left: 0px;
+        top: 5485px
+    }
+
+    .lampada-3 {
+        width: 100px;
+        left: 0px;
+        top: 2850px
     }
 
 
@@ -1697,6 +1770,12 @@ body {
 
     .hero-wrapper {
         height: 2240px;
+    }
+
+
+    /*----------- Lampada Background -------------------*/
+    .lampada-0, .lampada-1, .lampada-2, .lampada-3 {
+        visibility: hidden;
     }
 
 
