@@ -15,36 +15,6 @@ body {
     /* border: 1px solid black;  */
 }
 
-/*  --------------------------------- Lâmpadas Fundo -------------------------------------------*/
-.lampada-0 {
-    position: absolute;
-    width: 180px;
-    right: 0px;
-    top: 1025px;
-    overflow: visible;
-    transform: rotateY(180deg);
-}
-
-.lampada-1 {
-    position: absolute;
-    width: 175px;
-    right: 0px;
-    top: 4675px
-}
-
-.lampada-2 {
-    position: absolute;
-    width: 180px;
-    left: 0px;
-    top: 6300px
-}
-
-.lampada-3 {
-    position: absolute;
-    width: 180px;
-    left: 0px;
-    top: 3175px
-}
 
 /*  ------------------------------------ TITULOS -----------------------------------------------*/
 .titulos {
@@ -75,6 +45,7 @@ body {
     border-radius: 2px;
     margin-left: 5px;
 }
+
 
 /*--------------------------------- NAV BAR --------------------------------------------------------*/
 .navbar {
@@ -222,6 +193,19 @@ body {
     align-items: center;
 }
 
+.hero-lampada-canto {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    z-index: 1;
+}
+
+.hero-forma-canto {
+    position: absolute;
+    top: -25px;
+    left: 0px;
+}
+
 .hero-texto {
     height: fit-content;
 }
@@ -259,13 +243,13 @@ body {
 
 .hero-forma {
     position: relative;
-    top: 11%;
+    top: 7%;
 }
 
 .hero-luna {
     position: absolute;
-    top: 3%;
-    left: 11%;
+    right: 10%;
+    top: 0%;
 }
 
 /*------------------------------ SOBRE O LUMINOUS -----------------------------------------------------*/
@@ -1155,7 +1139,8 @@ body {
     }
 
     .traco {
-        height: 6px;
+        height: 5px;
+        width: 43px;
     }
 
     /*------------------- NAV ---------------------------*/
@@ -1184,15 +1169,21 @@ body {
         height: 75px;
     }
 
-    .hero-wrapper {
-        height: 2300px;
-    }
 
 
     /*------------------- HERO ---------------------------*/
 
     .hero {
         height: 1250px;
+    }
+
+    .hero-lampada-canto {
+        top: 185px;
+        width: 75px;
+    }
+
+    .hero-forma-canto {
+        width: 525px;
     }
 
     .hero-logo {
@@ -1210,11 +1201,36 @@ body {
 
     .hero-luna {
         width: 572px;
-        top: -18%;
+        top: 0%;
+    }
+
+    .hero-wrapper {
+        height: 2450px;
     }
 
 
     /*-------------- SOBRE O LUMINOUS  ----------------*/
+
+    .sobre-txtTitulos {
+        font-size: 46px;
+    }
+
+    .sobre-traco {
+        height: 5px;
+        width: 43px;
+    }
+
+    .sobre-txt {
+        font-size: 41px;
+    }
+
+    .sobre-imagem-1 img {
+        width: 550px;
+    }
+
+    .sobre-imagem-2 img {
+        width: 650px;
+    }
     
     .grid-1 p {
         font-size: 220px;
@@ -1325,12 +1341,12 @@ body {
 
     .titulo-card {
         padding-left: 70px;
-        font-size: 48px;
+        font-size: 50px;
     }
 
     .txt-card {
         padding-left: 70px;
-        font-size: 26px;
+        font-size: 28px;
     }
 
 
@@ -1380,11 +1396,17 @@ body {
 }
 
 @media only screen and (max-width: 1440px) {
-    /*----------- Lampada Background -------------------*/
-
-    .lampada-0, .lampada-1, .lampada-2, .lampada-3 {
-        width: 125px;
+    /*------------------- HERO ---------------------------*/
+    .hero-lampada-canto {
+        top: 140px;
+        width: 60px;
     }
+
+    .hero-forma-canto {
+        width: 375px;
+    }
+
+
 }
 
 
@@ -1433,6 +1455,15 @@ body {
         height: 686px;
     }
 
+    .hero-lampada-canto {
+        top: 105px;
+        width: 55px;
+    }
+
+    .hero-forma-canto {
+        width: 310px;
+    }
+
     .hero-texto {
         margin-left: 10px;
     }
@@ -1450,14 +1481,13 @@ body {
     }
 
     .hero-forma {
-        width: 285px;
-        top: 9.5%;
+        width: 260px;
     }
 
     .hero-luna {
         width: 300px;
-        top: 16%;
-        left: 11%;
+        top: 22%;
+        right: 14%;
     }   
 
     .hero-wrapper {
@@ -1468,31 +1498,6 @@ body {
         width: 90%;
     }
 
-
-    /*----------- Lampada Background -------------------*/
-    .lampada-0 {
-        width: 70px;
-        right: 0px;
-        top: 850px;
-    }
-    
-    .lampada-1 {
-        width: 100px;
-        right: 0px;
-        top: 4130px
-    }
-    
-    .lampada-2 {
-        width: 100px;
-        left: 0px;
-        top: 5485px
-    }
-
-    .lampada-3 {
-        width: 100px;
-        left: 0px;
-        top: 2850px
-    }
 
 
     /*-------------- SOBRE O LUMINOUS  ----------------*/
@@ -1745,6 +1750,14 @@ body {
     }
 
     /*------------------- HERO --------------------*/
+    .hero-lampada-canto {
+        width: 50px;
+    }
+
+    .hero-forma-canto {
+        width: 300px;
+    }
+
     .hero-logo {
         width: 330px;
     }
@@ -1758,24 +1771,18 @@ body {
     }
 
     .hero-forma {
-        width: 250px;
+        width: 265px;
         top: 8%;
     }
 
     .hero-luna {
-        width: 280px;
-        top: 17%;
-        left: 2%;
+        width: 300px;
+        top: 24%;
+        right: 4%;
     }  
 
     .hero-wrapper {
         height: 2240px;
-    }
-
-
-    /*----------- Lampada Background -------------------*/
-    .lampada-0, .lampada-1, .lampada-2, .lampada-3 {
-        visibility: hidden;
     }
 
 
@@ -2073,6 +2080,16 @@ body {
         border-bottom-left-radius: 75px;
     }
 
+    .hero-lampada-canto {
+        top: 85px;
+        width: 25px;
+    }
+
+    .hero-forma-canto {
+        top: 15px;
+        width: 160px;
+    }
+
     .hero-container {
         margin-top: 25px;
         flex-direction: column-reverse;
@@ -2085,12 +2102,12 @@ body {
     .hero-forma {
         width: 260px;
         top: 17.5%;
-        left: 5%;
+        right: -6%;
     }
 
     .hero-luna {
-        top: 15%;
-        left: 15%;
+        top: 21%;
+        right: 3%;
     }
 
     .hero-logo {
@@ -2434,6 +2451,28 @@ body {
         height: 1975px;
     }
 
+    .hero-lampada-canto {
+        top: 85px;
+        width: 22px;
+    }
+
+    .hero-forma-canto {
+        top: 20px;
+        width: 140px;
+    }
+
+    .hero-forma {
+        width: 250px;
+        top: 17.5%;
+        right: -8.5%;
+    }
+
+    .hero-luna {
+        width: 290px;
+        top: 23%;
+        right: -2.5%;
+    }
+
     /*----------------- HIPERFOCO ----------------------*/
     .hiperfoco-texto-container {
         height: 285px;
@@ -2547,11 +2586,14 @@ body {
     .hero-logo {
         width: 285px;
     }
-
-    .hero-luna {
-        left: 5.5%;
+    
+    .hero-forma {
+        top: 17%;
     }
 
+    .hero-luna {
+        right: -10%;
+    }
 
     /*-------------- SOBRE O LUMINOUS  ----------------*/
     .sobre-texto-container {
