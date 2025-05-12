@@ -1269,11 +1269,12 @@ body {
     }
 
     .hiperfoco-texto-container {
-        height: 525px;
+        height: 535px;
     }
 
     .hiperfoco-texto-cards {
-        font-size: 47px;
+        width: 85%;
+        font-size: 43px;
     }
 
     .slider-button {
